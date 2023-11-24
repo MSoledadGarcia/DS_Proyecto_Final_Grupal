@@ -19,9 +19,7 @@
 
 # Equipo de trabajo
 
-- Miembro 1: [Nombre del Miembro 1](#)
-- Miembro 2: [Nombre del Miembro 2](#)
-- ...
+- 
 
 # Introducción
 
@@ -43,7 +41,35 @@ Realizar una predicción de ventas y analizar los medios de pago más utilizados
 
 # Indicadores de rendimiento KPI's
 
-[...]
+1. Análisis de Productos Más y Menos Vendidos
+Objetivo: Identificar los productos con mayores y menores niveles de ventas.
+KPI: Porcentaje de participación en ventas para los productos más y menos vendidos.
+Fórmula: (Ventas de Producto específico / Ventas Totales) * 100
+Descripción: Este KPI evalúa la contribución de cada producto al total de las ventas. Al identificar los productos con mayores y menores porcentajes de participación, puedes focalizar estrategias específicas para impulsar la venta de productos populares o mejorar la promoción de aquellos con menor rendimiento. Este enfoque proporciona una visión más detallada sobre qué productos están influyendo más en las ventas generales.
+
+2. Análisis de Medios de Pago Más Utilizados
+Objetivo: Identificar los métodos de pago preferidos por los clientes.
+KPI: Porcentaje de transacciones utilizando métodos de pago específicos.
+Fórmula: (Transacciones con Método Específico / Total de Transacciones) * 100
+Descripción: Este KPI mide la proporción de transacciones que utilizan métodos de pago específicos, proporcionando información sobre las preferencias de los clientes en cuanto a métodos de pago.
+
+3. Análisis de Distribución Geográfica de Ventas
+Objetivo: Evaluar la distribución de las ventas en diferentes regiones.
+KPI: Porcentaje de participación de ventas en cada región.
+Fórmula: (Ventas en Región Específica / Ventas Totales) * 100
+Descripción: Este KPI ayuda a comprender cómo se distribuyen las ventas en diferentes regiones, lo que puede ser crucial para desarrollar estrategias de marketing y logística específicas.
+
+4. Tiempo de Envío Promedio
+Objetivo: Garantizar tiempos de entrega esperados.
+KPI: Promedio del tiempo de envío.
+Fórmula: Suma de Tiempos de Envío / Número de Envíos
+Descripción: Este KPI proporciona una medida simple y directa del tiempo promedio que transcurre desde la realización del pedido hasta la entrega.
+
+5. Satisfacción del Cliente
+Objetivo: Evaluar la satisfacción del cliente.
+KPI: Puntuación promedio de satisfacción del cliente.
+Fórmula: Suma de Puntuaciones de Satisfacción / Número de Clientes Encuestados
+Descripción: Este KPI mide la satisfacción del cliente mediante la recopilación y análisis de las puntuaciones proporcionadas por los clientes encuestados.
 
 # Alcance del proyecto
 
