@@ -20,7 +20,7 @@
 # Equipo de trabajo
 
 - Mario Suaza 
-- María Soledad García
+- María Soledad García Ortiz
 - Agustín Chianello
 - Juan Ignacio Berti
 
