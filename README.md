@@ -1,68 +1,66 @@
 # DS_Proyecto_Final_Grupal
 
-# EXPANCION DE LA EMPRESA OLIST - ANALISIS DE LA TENDENCIA DE COMPRA  
+# EXPANSIÓN DE LA EMPRESA OLIST - ANÁLISIS DE LA TENDENCIA DE COMPRA
 
+# Índice
 
-# Indice
+1. [Equipo de trabajo](#equipo-de-trabajo)
+2. [Introducción](#introducción)
+3. [Descripción del problema](#descripción-del-problema)
+4. [Objetivo General](#objetivo-general)
+5. [Objetivos Específicos](#objetivos-específicos)
+6. [Indicadores de rendimiento KPI's](#indicadores-de-rendimiento-kpis)
+7. [Alcance del proyecto](#alcance-del-proyecto)
+8. [Metodología de trabajo](#metodología-de-trabajo)
+9. [Stack tecnológico](#stack-tecnológico)
+10. [Diagrama de Gantt](#diagrama-de-gantt)
+11. [Análisis preliminar de datos](#análisis-preliminar-de-datos)
 
+# Equipo de trabajo
 
-1.   
-2.   
-
-
-
-# Equipo de trabajo 
-
-
-
-*  
-*   
-
+- Miembro 1: [Nombre del Miembro 1](#)
+- Miembro 2: [Nombre del Miembro 2](#)
+- ...
 
 # Introducción
-En este proyecto se analizarán datos de E-commerce de Brasil para conocer cómo es el negocio y hacer una predicción de ventas a futuro ya que nuestro cliente "Olist Store" tiene intenciones de expandirse hacia ese país. Contamos con información sobre ordenes, precios, pagos y envíos  en diferentes puntos del país, así como tambien informacion sobre satisfacción de los clientes y localización de los puntos de ventas. 
 
-
+En este proyecto, se llevará a cabo un análisis de datos de e-commerce en Brasil con el objetivo de entender el mercado y realizar una predicción de ventas. El cliente, "Olist Store", tiene la intención de expandirse a este país, y contamos con información detallada sobre órdenes, precios, pagos, envíos, satisfacción del cliente y ubicación de puntos de venta.
 
 # Descripción del problema
 
-Existen muchas empresas de e-commerce y para poder ingresar en un nuevo mercado es importante poder cumplir eficazmente con los clientes, como tambien seleccionar bien los productos que se ofrecerán. 
-Se deberán analizar los tiempos de envío de los productos, los mejores medios de promoción y los productos mas vendidos. 
-
-
+La entrada exitosa en un nuevo mercado de e-commerce implica satisfacer eficazmente a los clientes y seleccionar cuidadosamente los productos a ofrecer. En este proyecto, se analizarán los tiempos de envío, los métodos de promoción más efectivos y los productos más populares.
 
 # Objetivo General
 
-Hacer una predicción de ventas, analizar los medios de pagos más elegidos por los clientes, la distribucion de los vendedores para poder realizar los envíos cumpliendo los tiempos esperados de entrega.
-
-
+Realizar una predicción de ventas y analizar los medios de pago más utilizados por los clientes, así como la distribución geográfica de los vendedores para garantizar tiempos de entrega esperados.
 
 # Objetivos Específicos
 
-1.   Predicción de los productos más vendidos
-2.   Análisis de los estados con más ventas
-3.   Análisis de medios de pagos más elegidos
+1. Predicción de los productos más vendidos.
+2. Análisis de los estados con mayores ventas.
+3. Análisis de los métodos de pago más utilizados.
 
+# Indicadores de rendimiento KPI's
 
-# Indicadores de rendimiento KPI´S
-
-
+[...]
 
 # Alcance del proyecto
 
-
-
+[...]
 
 # Metodología de trabajo
 
-
+[...]
 
 # Stack tecnológico
 
+[...]
 
+# Diagrama de Gantt
 
-# Diagrama de Grantt
-
-
+[...]
 
 # Análisis preliminar de datos
+
+[...]
+
