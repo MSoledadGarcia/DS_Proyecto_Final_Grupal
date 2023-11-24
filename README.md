@@ -19,7 +19,10 @@
 
 # Equipo de trabajo
 
-- 
+- Mario Suaza 
+- María Soledad García
+- Agustín Chianello
+- Juan Ignacio Berti
 
 # Introducción
 
@@ -42,45 +45,97 @@ Realizar una predicción de ventas y analizar los medios de pago más utilizados
 # Indicadores de rendimiento KPI's
 
 1. Análisis de Productos Más y Menos Vendidos
+
 Objetivo: Identificar los productos con mayores y menores niveles de ventas.
+
 KPI: Porcentaje de participación en ventas para los productos más y menos vendidos.
+
 Fórmula: (Ventas de Producto específico / Ventas Totales) * 100
+
 Descripción: Este KPI evalúa la contribución de cada producto al total de las ventas. Al identificar los productos con mayores y menores porcentajes de participación, puedes focalizar estrategias específicas para impulsar la venta de productos populares o mejorar la promoción de aquellos con menor rendimiento. Este enfoque proporciona una visión más detallada sobre qué productos están influyendo más en las ventas generales.
 
 2. Análisis de Medios de Pago Más Utilizados
+
 Objetivo: Identificar los métodos de pago preferidos por los clientes.
+
 KPI: Porcentaje de transacciones utilizando métodos de pago específicos.
+
 Fórmula: (Transacciones con Método Específico / Total de Transacciones) * 100
+
 Descripción: Este KPI mide la proporción de transacciones que utilizan métodos de pago específicos, proporcionando información sobre las preferencias de los clientes en cuanto a métodos de pago.
 
 3. Análisis de Distribución Geográfica de Ventas
+
 Objetivo: Evaluar la distribución de las ventas en diferentes regiones.
+
 KPI: Porcentaje de participación de ventas en cada región.
+
 Fórmula: (Ventas en Región Específica / Ventas Totales) * 100
+
 Descripción: Este KPI ayuda a comprender cómo se distribuyen las ventas en diferentes regiones, lo que puede ser crucial para desarrollar estrategias de marketing y logística específicas.
 
 4. Tiempo de Envío Promedio
+
 Objetivo: Garantizar tiempos de entrega esperados.
+
 KPI: Promedio del tiempo de envío.
+
 Fórmula: Suma de Tiempos de Envío / Número de Envíos
+
 Descripción: Este KPI proporciona una medida simple y directa del tiempo promedio que transcurre desde la realización del pedido hasta la entrega.
 
 5. Satisfacción del Cliente
+
 Objetivo: Evaluar la satisfacción del cliente.
+
 KPI: Puntuación promedio de satisfacción del cliente.
+
 Fórmula: Suma de Puntuaciones de Satisfacción / Número de Clientes Encuestados
+
 Descripción: Este KPI mide la satisfacción del cliente mediante la recopilación y análisis de las puntuaciones proporcionadas por los clientes encuestados.
 
 # Alcance del proyecto
 
-[...]
+El proyecto cuenta con un objetivo claro, realizar una predicción sobre las potenciales ventas una vez se consolide la expansión de la empresa a Brasil. Sin embargo, para lograrlo es menester abordar diferentes aristas. 
+- Análisis Preliminar de Datos:
+
+Exploración y limpieza de datos para prepararlos para el análisis.
+Identificación de patrones y tendencias iniciales en el comportamiento de compra.
+
+- Predicción de Ventas:
+
+Análisis histórico de ventas en otros mercados.
+Implementación de modelos predictivos para estimar las ventas futuras.
+Evaluación de la precisión de las predicciones mediante indicadores de rendimiento.
+
+- Análisis de Medios de Pago:
+
+Recopilación de datos sobre los medios de pago utilizados en transacciones anteriores.
+Evaluación de la preferencia de los clientes por diferentes métodos de pago.
+Identificación de oportunidades para optimizar la oferta de medios de pago.
+
+- Distribución de Vendedores:
+
+Localización de los puntos de venta existentes en Brasil.
+Análisis de la dispersión geográfica de vendedores.
+Recomendaciones para la expansión de puntos de venta basadas en el análisis de datos.
 
 # Metodología de trabajo
 
 [...]
 
 # Stack tecnológico
-| ![VS Code](<img src= "https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/vsc.png" width="100" ) | ![GitHub](/images/github.png =100x) | ![Google Cloud](/images/google%20cloud.png =100x) | ![Python](/images/python.png =100x) | ![Pandas](/images/pandas.png =100x) | ![Matplotlib](/images/matplot_title_logo.png =100x) | ![Scikit-Learn](/images/scikit.png =100x) |
+
+<div class="stack-tech-images">
+  <img src="/images/vscode.jpeg" alt="VS Code" width="180" height="80">
+  <img src="/images/github1.jpg" alt="GitHub" width="180" height="80">
+  <img src="/images/Google-Cloud-Logo.jpeg" alt="Google Cloud" width="180" height="auto">
+  <img src="/images/python.png" alt="Python" width="180" height="80">
+  <img src="/images/pandas1.jpeg" alt="Pandas" width="180" height="80">
+  <img src="/images/id0B3_53hD.jpeg" alt="Matplotlib" width="180" height="90">
+  <img src="/images/Tutorial-Sklearn.jpg" alt="Scikit-Learn" width="180" height="90">
+</div>
+
 
 # Diagrama de Gantt
 
