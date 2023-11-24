@@ -80,7 +80,7 @@ Descripción: Este KPI mide la satisfacción del cliente mediante la recopilaci�
 [...]
 
 # Stack tecnológico
-| ![VS Code](/images/vscode.png =100x) | ![GitHub](/images/github.png =100x) | ![Google Cloud](/images/google%20cloud.png =100x) | ![Python](/images/python.png =100x) | ![Pandas](/images/pandas.png =100x) | ![Matplotlib](/images/matplot_title_logo.png =100x) | ![Scikit-Learn](/images/scikit.png =100x) |
+| ![VS Code](<img src= "https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/vsc.png" width="100" ) | ![GitHub](/images/github.png =100x) | ![Google Cloud](/images/google%20cloud.png =100x) | ![Python](/images/python.png =100x) | ![Pandas](/images/pandas.png =100x) | ![Matplotlib](/images/matplot_title_logo.png =100x) | ![Scikit-Learn](/images/scikit.png =100x) |
 
 # Diagrama de Gantt
 
