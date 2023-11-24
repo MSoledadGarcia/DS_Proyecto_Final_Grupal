@@ -134,6 +134,7 @@ Hemos decidido adoptar Scrum como metodología de trabajo. La estructura del pro
   <img src="/images/pandas1.jpeg" alt="Pandas" width="180" height="80">
   <img src="/images/id0B3_53hD.jpeg" alt="Matplotlib" width="180" height="90">
   <img src="/images/Tutorial-Sklearn.jpg" alt="Scikit-Learn" width="180" height="90">
+   <img src="/images/sql.png" alt="SQL Workbench" width="180" height="90">
 </div>
 
 
