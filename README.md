@@ -122,7 +122,7 @@ Recomendaciones para la expansión de puntos de venta basadas en el análisis de
 
 # Metodología de trabajo
 
-[...]
+Hemos decidido adoptar Scrum como metodología de trabajo. La estructura del proyecto se organizará en un equipo pequeño, facilitando la colaboración y maximizando la eficiencia. Ésta metodología se caracteriza por su flexibilidad y capacidad de adaptación, lo que permitirá al equipo ajustar las tareas y metas según sea necesario durante cada sprint.
 
 # Stack tecnológico
 
