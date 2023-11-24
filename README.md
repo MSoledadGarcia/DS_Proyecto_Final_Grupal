@@ -143,5 +143,38 @@ Hemos decidido adoptar Scrum como metodología de trabajo. La estructura del pro
 
 # Análisis preliminar de datos
 
-[...]
+1. Objetivo del Análisis Preliminar de Datos:
+Se realizó un análisis preliminar de datos sobre  100 mil  ordenes de compras que se realizaron en Brasil en distintos puntos de venta desde el 2016 hasta el 2018 con el objetivo de identificar y conocer la calidad de los datos e  identificar patrones. 
+
+2. Fuentes de Datos Utilizadas:
+
+   - Dataset e-commerce_Olist_dataset:
+                                    1. olist_customers_dataset.csv
+                                    2. olist_geolocation_dataset.csv
+                                    3. olist_order_items_dataset.csv
+                                    4. olist_order_payments_dataset.csv
+                                    5. olist_order_reviews_dataset.csv
+                                    6. olist_orders_dataset.csv
+                                    7. olist_products_dataset.csv
+                                    8. olist_sellers_dataset.csv
+                                    9. product_category_name_translation.csv
+
+
+   - Olist_funnel_marketing:
+                                    1. olist_closed_deals_dataset.csv
+                                    2. olist_marketing_qualified_leads_dataset.csv
+
+
+3. Proceso de Extracción y Carga (ETL):
+El proceso de Extracción, Transformación y Carga (ETL) se llevó a cabo para preparar los datos para su análisis. 
+Los datos fueron extraídos de los archivos CSV detallados anteriormente, utilizando sentencias SQL específicas para cargarlos en la base de datos MySQL. Las fuentes abarcan información detallada sobre clientes, ubicaciones geográficas, productos, órdenes, pagos, opiniones, vendedores, categorías, acuerdos cerrados y lideres de marketing.
+Durante la etapa de transformación, se crearon nuevas columnas y se ajustaron los tipos de datos para asegurar la coherencia en la base de datos. Por ejemplo, se agregó la columna id_nuevo a la tabla clientes y se actualizó con identificadores únicos incrementales. Además, se realizaron correcciones en la nomenclatura de las ciudades en la tabla localizacion para garantizar consistencia.
+Se establecieron relaciones lógicas entre las tablas, garantizando la integridad referencial. Este proceso facilitará consultas más complejas y análisis más profundos en etapas posteriores del proyecto.
+Este proceso de ETL no solo facilita la manipulación eficiente de los datos, sino que también sienta las bases para un análisis más significativo en las etapas subsiguientes del proyecto. Cabe destacar que se implementaron medidas para garantizar la calidad y consistencia de los datos en todas las tablas.
+
+
+5. Calidad de Datos:
+Las columnas de identificación de las diferentes tablas son confusas ya que tienen valores que incluyen letras y números y en algunas tablas hay más de un Id por lo que se tuvo que analizar minuciosamente para poder relacionar
+las tablas entre si. Hay valores de ciudad y estados escritos de diferentes maneras para referirse a uno mismo. 
+
 
