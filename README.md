@@ -139,7 +139,7 @@ Hemos decidido adoptar Scrum como metodología de trabajo. La estructura del pro
 
 # Diagrama de Gantt
 
-![image](https://github.com/ji-berti/DS_Proyecto_Final_Grupal/assets/142271064/ece8738b-6e19-4548-bb32-0ac9f85efae8)
+![image](https://github.com/ji-berti/DS_Proyecto_Final_Grupal/assets/142271064/3d583eea-516f-4192-a029-58b709aca000)
 
 
 # Análisis preliminar de datos
