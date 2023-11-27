@@ -179,4 +179,5 @@ Este proceso de ETL no solo facilita la manipulación eficiente de los datos, si
 Las columnas de identificación de las diferentes tablas son confusas ya que tienen valores que incluyen letras y números y en algunas tablas hay más de un Id por lo que se tuvo que analizar minuciosamente para poder relacionar
 las tablas entre si. Hay valores de ciudad y estados escritos de diferentes maneras para referirse a uno mismo. 
 
+6. Primeras observaciones:
 
