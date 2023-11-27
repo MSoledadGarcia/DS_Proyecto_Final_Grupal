@@ -180,4 +180,6 @@ Las columnas de identificación de las diferentes tablas son confusas ya que tie
 las tablas entre si. Hay valores de ciudad y estados escritos de diferentes maneras para referirse a uno mismo. 
 
 6. Primeras observaciones:
-
+  <img src="/images/Analisis%20preliminar%20productos.png" alt="Productos" width="auto" height="auto">
+  <img src="/images/Analisis%20preliminar%20vendedores.png" alt="Vendedores" width="auto" height="auto">
+  <img src="/images/Analisis%20preliminar%20medios%20de%20pago.png" alt="medios pago" width="auto" height="auto">
