@@ -19,10 +19,10 @@
 
 # Equipo de trabajo
 
-- Mario Suaza 
-- María Soledad García Ortiz
-- Agustín Chianello
-- Juan Ignacio Berti
+- Mario Suaza - Mentor
+- María Soledad García Ortiz - Ingeniería de Datos
+- Agustín Chianello - Análisis de Datos
+- Juan Ignacio Berti - Ciencia de Datos
 
 # Introducción
 
