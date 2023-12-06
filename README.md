@@ -72,9 +72,14 @@ Realizar una predicción de ventas y analizar los medios de pago más utilizados
 
 ## Objetivos Específicos
 
-1. Predicción de los productos más vendidos.
-2. Análisis de los estados con mayores ventas.
-3. Análisis de los métodos de pago más utilizados.
+
+**1. Predicción de los productos más vendidos:** Utilizar modelos predictivos para identificar y anticipar los productos con mayor demanda en el nuevo mercado. Esto permitirá una gestión efectiva de inventario y estrategias de marketing focalizadas.
+
+**2. Análisis de los estados con mayores ventas:** Evaluar y comprender las variaciones regionales en las ventas, identificando los estados con un rendimiento destacado. Esto permitirá una adaptación estratégica a las preferencias y comportamientos de compra específicos de cada región.
+
+**3. Análisis de los métodos de pago más utilizados:** Investigar y analizar los métodos de pago preferidos por los clientes. Este análisis proporcionará información valiosa para optimizar las opciones de pago ofrecidas y mejorar la experiencia del usuario.
+
+**4. Análisis de la satisfacción del cliente:** Destacar la importancia de comprender y mejorar continuamente la satisfacción del cliente como parte integral del proyecto en el nuevo mercado de e-commerce.
 
 
 ## Indicadores de rendimiento KPI's
