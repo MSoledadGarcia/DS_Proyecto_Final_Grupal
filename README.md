@@ -1,4 +1,4 @@
-# # Proyecto final - Consultor BI - HENRY Labs
+## Proyecto final - Consultor BI - HENRY Labs
 
 
 # Índice
