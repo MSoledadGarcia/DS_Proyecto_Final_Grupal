@@ -186,7 +186,7 @@ Hemos decidido adoptar Scrum como metodología de trabajo. La estructura del pro
 
 ## Diagrama de Gantt
 
-![image](https://github.com/ji-berti/DS_Proyecto_Final_Grupal/assets/142271064/3d583eea-516f-4192-a029-58b709aca000)
+<img src="https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/Diagrama%20de%20gantt.png" alt="Logo del equipo" width="600">
 
 
 
