@@ -175,21 +175,21 @@ Se realizó un análisis preliminar de datos sobre  100 mil  ordenes de compras 
 
 2. Fuentes de Datos Utilizadas:
 
+         Dataset e-commerce_Olist_dataset:
+   
+        1. olist_customers_dataset.csv
+        2. olist_geolocation_dataset.csv
+        3. olist_order_items_dataset.csv
+        4. olist_order_payments_dataset.csv
+        5. olist_order_reviews_dataset.csv
+        6. olist_orders_dataset.csv
+        7. olist_products_dataset.csv
+        8. olist_sellers_dataset.csv
+        9. product_category_name_translation.csv
 
-         Dataset e-commerce_Olist_dataset
-        1. [olist_customers_dataset.csv](dataset/olist_customers_dataset.csv)
-        2. [olist_geolocation_dataset.csv](dataset/olist_geolocation_dataset.csv)
-        3. [olist_order_items_dataset.csv](dataset/olist_order_items_dataset.csv)
-        4. [olist_order_payments_dataset.csv](dataset/olist_order_payments_dataset.csv)
-        5. [olist_order_reviews_dataset.csv](dataset/olist_order_reviews_dataset.csv)
-        6. [olist_orders_dataset.csv](dataset/olist_orders_dataset.csv)
-        7. [olist_products_dataset.csv](dataset/olist_products_dataset.csv)
-        8. [olist_sellers_dataset.csv](dataset/olist_sellers_dataset.csv)
-        9. [product_category_name_translation.csv](dataset/product_category_name_translation.csv)
+Se pueden obtener de https://github.com/soyHenry/DS-Proyecto_Grupal_Olist/tree/main/data 
 
-
-
-3. Proceso de Extracción y Carga (ETL):
+4. Proceso de Extracción y Carga (ETL):
 El proceso de Extracción, Transformación y Carga (ETL) se llevó a cabo para preparar los datos para su análisis. 
 Los datos fueron extraídos de los archivos CSV detallados anteriormente, utilizando sentencias SQL específicas para cargarlos en la base de datos MySQL. Las fuentes abarcan información detallada sobre clientes, ubicaciones geográficas, productos, órdenes, pagos, opiniones, vendedores, categorías, acuerdos cerrados y lideres de marketing.
 Durante la etapa de transformación, se crearon nuevas columnas y se ajustaron los tipos de datos para asegurar la coherencia en la base de datos. Por ejemplo, se agregó la columna id_nuevo a la tabla clientes y se actualizó con identificadores únicos incrementales. Además, se realizaron correcciones en la nomenclatura de las ciudades en la tabla localizacion para garantizar consistencia.
