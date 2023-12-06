@@ -21,8 +21,7 @@
 
 
 # Acerca de nosotros
-
-<img src="/images/logo_G4.jpeg" alt="G4" width="300" height="300">
+![Logo del equipo](https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/68747470733a2f2f706c61792d6c682e676f6f676c6575736572636f6e74656e742e636f6d2f65714c545857647979674b556638354a7343586d634c537231476e6f594e4c4a664656436d592d4e38784746723254335057774e6346644a325378374d77634f366163.png](https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/logo_G4.jpg)
 
 
 G4 Business Intelligence es una  empresa dedicada a potenciar el éxito de otras organizaciones al colaborar estrechamente con aquellas que buscan maximizar su rendimiento a través de la implementación efectiva de estrategias basadas en datos. En un mundo cada vez más impulsado por la información, G4 se destaca como un aliado confiable para empresas data-driven que buscan obtener un valor significativo de sus activos de datos.
