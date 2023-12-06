@@ -189,7 +189,7 @@ Se realizó un análisis preliminar de datos sobre  100 mil  ordenes de compras 
 
 Se pueden obtener de https://github.com/soyHenry/DS-Proyecto_Grupal_Olist/tree/main/data 
 
-4. Proceso de Extracción y Carga (ETL):
+3. Proceso de Extracción y Carga (ETL):
 El proceso de Extracción, Transformación y Carga (ETL) se llevó a cabo para preparar los datos para su análisis. 
 Los datos fueron extraídos de los archivos CSV detallados anteriormente, utilizando sentencias SQL específicas para cargarlos en la base de datos MySQL. Las fuentes abarcan información detallada sobre clientes, ubicaciones geográficas, productos, órdenes, pagos, opiniones, vendedores, categorías, acuerdos cerrados y lideres de marketing.
 Durante la etapa de transformación, se crearon nuevas columnas y se ajustaron los tipos de datos para asegurar la coherencia en la base de datos. Por ejemplo, se agregó la columna id_nuevo a la tabla clientes y se actualizó con identificadores únicos incrementales. Además, se realizaron correcciones en la nomenclatura de las ciudades en la tabla localizacion para garantizar consistencia.
@@ -202,7 +202,7 @@ Mas detalles sobre este proceso en [ETL](ETL)
    
 La calidad de los datos analizados en el informe es en su mayoría alta, ya que la mayoría de la información se presenta de manera legible. Sin embargo, se observaron algunos desafíos relacionados con los nombres propios, donde se detectaron errores tipográficos y variaciones en la escritura. Además, se identificaron inconsistencias en la estructura de los identificadores alfanuméricos, ya que no seguían un formato incremental. Estos aspectos pueden requerir una atención específica para garantizar la coherencia y precisión de los datos, pero en general, la calidad es sólida con la necesidad de abordar ciertas áreas específicas.
 
-6. Primeras observaciones:
+5. Primeras observaciones:
   <img src="/images/Analisis%20preliminar%20productos.png" alt="Productos" width="auto" height="auto">
   <img src="/images/Analisis%20preliminar%20vendedores.png" alt="Vendedores" width="auto" height="auto">
   <img src="/images/Analisis%20preliminar%20medios%20de%20pago.png" alt="medios pago" width="auto" height="auto">
