@@ -49,7 +49,6 @@ Nuestro equipo está comprometido con la excelencia y se esfuerza por mantenerse
 # Proyecto 
 
 EXPANSIÓN DE LA EMPRESA OLIST - ANÁLISIS DE LA TENDENCIA DE VENTA
-![Logo del proyecto](https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/68747470733a2f2f706c61792d6c682e676f6f676c6575736572636f6e74656e742e636f6d2f65714c545857647979674b556638354a7343586d634c537231476e6f594e4c4a664656436d592d4e38784746723254335057774e6346644a325378374d77634f366163.png)
 
 <img src= "https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/68747470733a2f2f706c61792d6c682e676f6f676c6575736572636f6e74656e742e636f6d2f65714c545857647979674b556638354a7343586d634c537231476e6f594e4c4a664656436d592d4e38784746723254335057774e6346644a325378374d77634f366163.png" alt="Logo del equipo" width="300" height="300">
 
@@ -152,6 +151,8 @@ Recomendaciones para la expansión de puntos de venta basadas en el análisis de
 # Metodología de trabajo
 
 Hemos decidido adoptar Scrum como metodología de trabajo. La estructura del proyecto se organizará en un equipo pequeño, facilitando la colaboración y maximizando la eficiencia. Ésta metodología se caracteriza por su flexibilidad y capacidad de adaptación, lo que permitirá al equipo ajustar las tareas y metas según sea necesario durante cada sprint.
+
+<img src= "https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/scrum.png" alt="Logo del equipo" height="300">
 
 # Stack tecnológico
 
