@@ -1,21 +1,40 @@
-# DS_Proyecto_Final_Grupal
+# # Proyecto final - Consultor BI - HENRY Labs
 
-# EXPANSIÓN DE LA EMPRESA OLIST - ANÁLISIS DE LA TENDENCIA DE COMPRA
-![Logo del proyecto](https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/68747470733a2f2f706c61792d6c682e676f6f676c6575736572636f6e74656e742e636f6d2f65714c545857647979674b556638354a7343586d634c537231476e6f594e4c4a664656436d592d4e38784746723254335057774e6346644a325378374d77634f366163.png)
 
 # Índice
 
-1. [Equipo de trabajo](#equipo-de-trabajo)
-2. [Introducción](#introducción)
-3. [Descripción del problema](#descripción-del-problema)
-4. [Objetivo General](#objetivo-general)
-5. [Objetivos Específicos](#objetivos-específicos)
-6. [Indicadores de rendimiento KPI's](#indicadores-de-rendimiento-kpis)
-7. [Alcance del proyecto](#alcance-del-proyecto)
-8. [Metodología de trabajo](#metodología-de-trabajo)
-9. [Stack tecnológico](#stack-tecnológico)
-10. [Diagrama de Gantt](#diagrama-de-gantt)
-11. [Análisis preliminar de datos](#análisis-preliminar-de-datos)
+1. [Acerca de nosotros](#acerca-de-nosotros)
+2. [Equipo de trabajo](#equipo-de-trabajo)
+3. [Proyecto](#proyecto)
+4. [Introducción](#introducción)
+5. [Descripción del problema](#descripción-del-problema)
+6. [Objetivo General](#objetivo-general)
+7. [Objetivos Específicos](#objetivos-específicos)
+8. [Indicadores de rendimiento KPI's](#indicadores-de-rendimiento-kpis)
+9. [Alcance del proyecto](#alcance-del-proyecto)
+10. [Metodología de trabajo](#metodología-de-trabajo)
+11. [Stack tecnológico](#stack-tecnológico)
+12. [Diagrama de Gantt](#diagrama-de-gantt)
+13. [Análisis preliminar de datos](#análisis-preliminar-de-datos)
+
+
+
+
+# Acerca de nosotros
+
+![Logo del equipo](https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/logo_G4.jpg)  
+
+
+G4 Business Intelligence es una  empresa dedicada a potenciar el éxito de otras organizaciones al colaborar estrechamente con aquellas que buscan maximizar su rendimiento a través de la implementación efectiva de estrategias basadas en datos. En un mundo cada vez más impulsado por la información, G4 se destaca como un aliado confiable para empresas data-driven que buscan obtener un valor significativo de sus activos de datos.
+
+Nuestra misión en G4 es proporcionar soluciones integrales de business intelligence que abarcan desde la obtención hasta el análisis y las predicciones de datos, permitiendo a nuestros clientes tomar decisiones informadas y estratégicas en todos los aspectos de sus operaciones. Nos enorgullece ofrecer servicios personalizados que se adaptan a las necesidades específicas de cada empresa con la que colaboramos, impulsando así la eficiencia, la productividad y la rentabilidad.
+
+Trabajamos en estrecha colaboración con los equipos internos, aprovechando tecnologías de vanguardia y metodologías avanzadas para garantizar que nuestros clientes no solo recopilen datos, sino que los transformen en información valiosa y accionable.
+
+En G4 Business Intelligence, reconocemos la importancia de la agilidad y la innovación en el entorno empresarial actual. 
+Nuestro equipo está comprometido con la excelencia y se esfuerza por mantenerse a la vanguardia de las tendencias emergentes en el mundo del análisis de datos.
+
+
 
 # Equipo de trabajo
 
@@ -23,6 +42,12 @@
 - María Soledad García Ortiz - Ingeniería de Datos
 - Agustín Chianello - Análisis de Datos
 - Juan Ignacio Berti - Ciencia de Datos
+
+# Proyecto 
+
+EXPANSIÓN DE LA EMPRESA OLIST - ANÁLISIS DE LA TENDENCIA DE VENTA
+![Logo del proyecto](https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/68747470733a2f2f706c61792d6c682e676f6f676c6575736572636f6e74656e742e636f6d2f65714c545857647979674b556638354a7343586d634c537231476e6f594e4c4a664656436d592d4e38784746723254335057774e6346644a325378374d77634f366163.png)
+
 
 # Introducción
 
@@ -52,7 +77,7 @@ KPI: Porcentaje de participación en ventas para los productos más y menos vend
 
 Fórmula: (Ventas de Producto específico / Ventas Totales) * 100
 
-Descripción: Este KPI evalúa la contribución de cada producto al total de las ventas. Al identificar los productos con mayores y menores porcentajes de participación, puedes focalizar estrategias específicas para impulsar la venta de productos populares o mejorar la promoción de aquellos con menor rendimiento. Este enfoque proporciona una visión más detallada sobre qué productos están influyendo más en las ventas generales.
+Descripción: Este KPI evalúa la contribución de cada producto al total de las ventas. Al identificar los productos con mayores y menores porcentajes de participación, se puede focalizar estrategias específicas para impulsar la venta de productos populares o mejorar la promoción de aquellos con menor rendimiento. Este enfoque proporciona una visión más detallada sobre qué productos están influyendo más en las ventas generales.
 
 2. Análisis de Medios de Pago Más Utilizados
 
@@ -174,10 +199,11 @@ Durante la etapa de transformación, se crearon nuevas columnas y se ajustaron l
 Se establecieron relaciones lógicas entre las tablas, garantizando la integridad referencial. Este proceso facilitará consultas más complejas y análisis más profundos en etapas posteriores del proyecto.
 Este proceso de ETL no solo facilita la manipulación eficiente de los datos, sino que también sienta las bases para un análisis más significativo en las etapas subsiguientes del proyecto. Cabe destacar que se implementaron medidas para garantizar la calidad y consistencia de los datos en todas las tablas.
 
+Mas detalles sobre este proceso en [ETL](ETL)  
 
-5. Calidad de Datos:
-Las columnas de identificación de las diferentes tablas son confusas ya que tienen valores que incluyen letras y números y en algunas tablas hay más de un Id por lo que se tuvo que analizar minuciosamente para poder relacionar
-las tablas entre si. Hay valores de ciudad y estados escritos de diferentes maneras para referirse a uno mismo. 
+4. Calidad de Datos:
+   
+La calidad de los datos analizados en el informe es en su mayoría alta, ya que la mayoría de la información se presenta de manera legible. Sin embargo, se observaron algunos desafíos relacionados con los nombres propios, donde se detectaron errores tipográficos y variaciones en la escritura. Además, se identificaron inconsistencias en la estructura de los identificadores alfanuméricos, ya que no seguían un formato incremental. Estos aspectos pueden requerir una atención específica para garantizar la coherencia y precisión de los datos, pero en general, la calidad es sólida con la necesidad de abordar ciertas áreas específicas.
 
 6. Primeras observaciones:
   <img src="/images/Analisis%20preliminar%20productos.png" alt="Productos" width="auto" height="auto">
