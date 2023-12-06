@@ -175,21 +175,18 @@ Se realizó un análisis preliminar de datos sobre  100 mil  ordenes de compras 
 
 2. Fuentes de Datos Utilizadas:
 
-   - Dataset e-commerce_Olist_dataset:
-                                    1. olist_customers_dataset.csv
-                                    2. olist_geolocation_dataset.csv
-                                    3. olist_order_items_dataset.csv
-                                    4. olist_order_payments_dataset.csv
-                                    5. olist_order_reviews_dataset.csv
-                                    6. olist_orders_dataset.csv
-                                    7. olist_products_dataset.csv
-                                    8. olist_sellers_dataset.csv
-                                    9. product_category_name_translation.csv
 
+## Dataset e-commerce_Olist_dataset
+1. [olist_customers_dataset.csv](dataset/olist_customers_dataset.csv)
+2. [olist_geolocation_dataset.csv](dataset/olist_geolocation_dataset.csv)
+3. [olist_order_items_dataset.csv](dataset/olist_order_items_dataset.csv)
+4. [olist_order_payments_dataset.csv](dataset/olist_order_payments_dataset.csv)
+5. [olist_order_reviews_dataset.csv](dataset/olist_order_reviews_dataset.csv)
+6. [olist_orders_dataset.csv](dataset/olist_orders_dataset.csv)
+7. [olist_products_dataset.csv](dataset/olist_products_dataset.csv)
+8. [olist_sellers_dataset.csv](dataset/olist_sellers_dataset.csv)
+9. [product_category_name_translation.csv](dataset/product_category_name_translation.csv)
 
-   - Olist_funnel_marketing:
-                                    1. olist_closed_deals_dataset.csv
-                                    2. olist_marketing_qualified_leads_dataset.csv
 
 
 3. Proceso de Extracción y Carga (ETL):
