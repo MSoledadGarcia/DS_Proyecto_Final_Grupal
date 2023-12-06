@@ -9,14 +9,21 @@ import re
 from unidecode import unidecode
 from nltk.probability import FreqDist
 from wordcloud import WordCloud
+from sklearn.model_selection import train_test_split
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics import classification_report
+from sklearn.metrics import roc_auc_score
+from sklearn.metrics import confusion_matrix
+import xgboost as xgb
+from xgboost import XGBClassifier
 
-# Descargar recursos adicionales de NLTK (puedes hacerlo una vez)
+# Descargar recursos adicionales de NLTK 
 # nltk.download('punkt')
 # nltk.download('stopwords')
 # nltk.download('wordnet')
 
 df= pd.read_csv('opiniones_traducido - opiniones.csv')
-columnas_seleccionadas = df.columns[1:]  # Excluye la primera columna
+columnas_seleccionadas = df.columns[1:5]  # Excluye la primera columna
 
 # Crear un nuevo DataFrame con las columnas seleccionadas
 df_recortado = df[columnas_seleccionadas]
@@ -44,8 +51,6 @@ sns.histplot(df_recortado['puntaje'], discrete=True, edgecolor='black', color='o
 plt.title('Distribución de frecuencias I')
 plt.xlabel('Puntaje')
 plt.ylabel('Frecuencia')
-
-# Mostrar el histograma
 #plt.show()
 
 #Crear el histograma de la columna "review_positiva" para ver la distribución de las opiniones.
@@ -56,11 +61,7 @@ sns.histplot(data=df_recortado, x='review_positiva', discrete=True, edgecolor='b
 plt.title('Distribución de frecuencias II')
 plt.xlabel('Tipo de review')
 plt.ylabel('Frecuencia')
-
-# Cambiar las etiquetas del eje x
 plt.xticks([0, 1], ['Negativa', 'Positiva'])
-
-# Mostrar el histograma
 #plt.show()
 
 df_token = pd.read_csv('opiniones_cond.csv')
@@ -90,12 +91,12 @@ df_negativas['titulo_tokenizado'] = df_negativas['titulo'].apply(tokenize_and_le
 df_negativas['mensaje_tokenizado'] = df_negativas['mensaje'].apply(tokenize_and_lemmatize)
 #print(df_negativas[['puntaje', 'titulo_tokenizado', 'mensaje_tokenizado']].head())
 
+
 #Distribución de palabras en la columna 'titulo_tokenizado' del DF de opiniones positivas:
 fd_titulo_positivas = FreqDist(token for tokens in df_positivas['titulo_tokenizado'] for token in tokens)
 del fd_titulo_positivas['nan']
 if 'otimo' in fd_titulo_positivas:
     fd_titulo_positivas['optimo'] = fd_titulo_positivas.pop('otimo')
-
 
 df_titulo_positivo = pd.DataFrame(list(fd_titulo_positivas.items()), columns = ["Word","Frequency"])
 #print(df_titulo_positivo)
@@ -126,19 +127,56 @@ df_mensaje_positivo = pd.DataFrame(list(fd_mensaje_positivas.items()), columns =
 df_mensaje_positivo.sort_values('Frequency',ascending=False, inplace = True)
 print(df_mensaje_positivo.head(10))
 
-#Graficar histograma del df_mensaje_positivo :
-colores = sns.color_palette("cubehelix")
-plt.figure(figsize = (15,8))
-plot = sns.barplot(x  = df_mensaje_positivo.iloc[:10].Word, y = df_mensaje_positivo.iloc[:10].Frequency, palette=colores)
-for item in plot.get_xticklabels():
-    item.set_rotation(90)
-#plt.show()
+#---------XGBoost---------#
+df_recortado['texto'] = df_recortado['titulo'] + ' ' + df_recortado['mensaje']
+df_recortado= df_recortado.drop(['titulo', 'mensaje'], axis=1)
+df_recortado= df_recortado.dropna(subset=['texto'])
 
-#Graficar nube de palabras del df_mensaje_positivo :
-wordcloud = WordCloud(width=800, height=400, background_color='white').generate_from_frequencies(fd_mensaje_positivas)
+tfidf_vectorizer = TfidfVectorizer()
+X_tfidf = tfidf_vectorizer.fit_transform(df_recortado['texto'])
 
-plt.figure(figsize=(10, 5))
-plt.imshow(wordcloud, interpolation='bilinear')
-plt.axis('off')  
-#plt.show()
 
+X = df_recortado.drop(['review_positiva'], axis=1)
+y = df_recortado['review_positiva']
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=5)
+
+tfidf_vectorizer = TfidfVectorizer()
+X_train_tfidf = tfidf_vectorizer.fit_transform(X_train['texto'])
+X_test_tfidf = tfidf_vectorizer.transform(X_test['texto'])
+
+model_xgboost= xgb.XGBClassifier(learning_rate = 0.1,
+                                 max_depth = 5,
+                                 n_estimators=5000,
+                                 subsample=0.5,
+                                 colsample_bytree=0.5,
+                                 eval_metric = 'auc',
+                                 verbosity=1
+                                )
+
+eval_set= [(X_test_tfidf, y_test)]
+
+model_xgboost.fit(X_train_tfidf,
+                  y_train,
+                  early_stopping_rounds=10,
+                  eval_set=eval_set,
+                  verbose=True)
+
+y_train_pred= model_xgboost.predict_proba(X_train_tfidf)[:,1]
+y_test_pred= model_xgboost.predict_proba(X_test_tfidf)[:,1]
+
+print("AUC Train: {:.4f}\nAUC Test: {:.4f}".format(roc_auc_score(y_train, y_train_pred),
+                                                   roc_auc_score(y_test, y_test_pred)))
+
+#Matriz de confusión:
+conf_matrix = confusion_matrix(y_test, model_xgboost.predict(X_test_tfidf))
+
+plt.figure(figsize=(8, 6))
+sns.heatmap(conf_matrix, annot=True, fmt="d", cmap="Blues", cbar=False)
+plt.title("Matriz de Confusión")
+plt.xlabel("Predicciones")
+plt.ylabel("Valores Verdaderos")
+plt.show()
+
+print('Informe de clasificación')
+print(classification_report(y_test, model_xgboost.predict(X_test_tfidf)))
