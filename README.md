@@ -22,7 +22,7 @@
 
 # Acerca de nosotros
 
-![Logo del equipo](https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/logo_G4.jpg)
+
 
 <img src="https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/logo_G4.jpg" alt="Logo del equipo" width="300" height="300">
 
@@ -51,6 +51,7 @@ Nuestro equipo está comprometido con la excelencia y se esfuerza por mantenerse
 EXPANSIÓN DE LA EMPRESA OLIST - ANÁLISIS DE LA TENDENCIA DE VENTA
 ![Logo del proyecto](https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/68747470733a2f2f706c61792d6c682e676f6f676c6575736572636f6e74656e742e636f6d2f65714c545857647979674b556638354a7343586d634c537231476e6f594e4c4a664656436d592d4e38784746723254335057774e6346644a325378374d77634f366163.png)
 
+<img src= "https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/68747470733a2f2f706c61792d6c682e676f6f676c6575736572636f6e74656e742e636f6d2f65714c545857647979674b556638354a7343586d634c537231476e6f594e4c4a664656436d592d4e38784746723254335057774e6346644a325378374d77634f366163.png" alt="Logo del equipo" width="300" height="300">
 
 # Introducción
 
