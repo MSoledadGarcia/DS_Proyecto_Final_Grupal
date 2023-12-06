@@ -1,7 +1,8 @@
-## Proyecto final - Consultor BI - HENRY Labs
+# Proyecto final - Consultor BI - HENRY Labs
 
 
-# Índice
+
+## Índice
 
 1. [Acerca de nosotros](#acerca-de-nosotros)
 2. [Equipo de trabajo](#equipo-de-trabajo)
@@ -20,7 +21,7 @@
 
 
 
-# Acerca de nosotros
+## Acerca de nosotros
 
 
 
@@ -39,44 +40,50 @@ Nuestro equipo está comprometido con la excelencia y se esfuerza por mantenerse
 
 
 
-# Equipo de trabajo
+## Equipo de trabajo
 
 - Mario Suaza - Mentor
 - María Soledad García Ortiz - Ingeniería de Datos
 - Agustín Chianello - Análisis de Datos
 - Juan Ignacio Berti - Ciencia de Datos
 
-# Proyecto 
+
+## Proyecto 
 
 EXPANSIÓN DE LA EMPRESA OLIST - ANÁLISIS DE LA TENDENCIA DE VENTA
 
 <img src= "https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/68747470733a2f2f706c61792d6c682e676f6f676c6575736572636f6e74656e742e636f6d2f65714c545857647979674b556638354a7343586d634c537231476e6f594e4c4a664656436d592d4e38784746723254335057774e6346644a325378374d77634f366163.png" alt="Logo del equipo" width="300" height="300">
 
-# Introducción
+
+## Introducción
 
 En este proyecto, se llevará a cabo un análisis de datos de e-commerce en Brasil con el objetivo de entender el mercado y realizar una predicción de ventas. El cliente, "Olist Store", tiene la intención de expandirse a este país, y contamos con información detallada sobre órdenes, precios, pagos, envíos, satisfacción del cliente y ubicación de puntos de venta.
 
-# Descripción del problema
+
+## Descripción del problema
 
 La entrada exitosa en un nuevo mercado de e-commerce implica satisfacer eficazmente a los clientes y seleccionar cuidadosamente los productos a ofrecer. En este proyecto, se analizarán los tiempos de envío, los métodos de promoción más efectivos y los productos más populares.
 
-# Objetivo General
+
+## Objetivo General
 
 Realizar una predicción de ventas y analizar los medios de pago más utilizados por los clientes, así como la distribución geográfica de los vendedores para garantizar tiempos de entrega esperados.
 
-# Objetivos Específicos
+
+## Objetivos Específicos
 
 1. Predicción de los productos más vendidos.
 2. Análisis de los estados con mayores ventas.
 3. Análisis de los métodos de pago más utilizados.
 
-# Indicadores de rendimiento KPI's
+
+## Indicadores de rendimiento KPI's
 
 1. Análisis de Productos Más y Menos Vendidos
 
 Objetivo: Identificar los productos con mayores y menores niveles de ventas.
 
-KPI: Porcentaje de participación en ventas para los productos más y menos vendidos.
+**KPI: Porcentaje de participación en ventas para los productos más y menos vendidos.**
 
 Fórmula: (Ventas de Producto específico / Ventas Totales) * 100
 
@@ -86,7 +93,7 @@ Descripción: Este KPI evalúa la contribución de cada producto al total de las
 
 Objetivo: Identificar los métodos de pago preferidos por los clientes.
 
-KPI: Porcentaje de transacciones utilizando métodos de pago específicos.
+**KPI: Porcentaje de transacciones utilizando métodos de pago específicos.**
 
 Fórmula: (Transacciones con Método Específico / Total de Transacciones) * 100
 
@@ -96,7 +103,7 @@ Descripción: Este KPI mide la proporción de transacciones que utilizan método
 
 Objetivo: Evaluar la distribución de las ventas en diferentes regiones.
 
-KPI: Porcentaje de participación de ventas en cada región.
+**KPI: Porcentaje de participación de ventas en cada región.**
 
 Fórmula: (Ventas en Región Específica / Ventas Totales) * 100
 
@@ -106,7 +113,7 @@ Descripción: Este KPI ayuda a comprender cómo se distribuyen las ventas en dif
 
 Objetivo: Garantizar tiempos de entrega esperados.
 
-KPI: Promedio del tiempo de envío.
+**KPI: Promedio del tiempo de envío.**
 
 Fórmula: Suma de Tiempos de Envío / Número de Envíos
 
@@ -116,13 +123,14 @@ Descripción: Este KPI proporciona una medida simple y directa del tiempo promed
 
 Objetivo: Evaluar la satisfacción del cliente.
 
-KPI: Puntuación promedio de satisfacción del cliente.
+**KPI: Puntuación promedio de satisfacción del cliente.**
 
 Fórmula: Suma de Puntuaciones de Satisfacción / Número de Clientes Encuestados
 
 Descripción: Este KPI mide la satisfacción del cliente mediante la recopilación y análisis de las puntuaciones proporcionadas por los clientes encuestados.
 
-# Alcance del proyecto
+
+## Alcance del proyecto
 
 El proyecto cuenta con un objetivo claro, realizar una predicción sobre las potenciales ventas una vez se consolide la expansión de la empresa a Brasil. Sin embargo, para lograrlo es menester abordar diferentes aristas. 
 - Análisis Preliminar de Datos:
@@ -148,13 +156,15 @@ Localización de los puntos de venta existentes en Brasil.
 Análisis de la dispersión geográfica de vendedores.
 Recomendaciones para la expansión de puntos de venta basadas en el análisis de datos.
 
-# Metodología de trabajo
+
+## Metodología de trabajo
 
 Hemos decidido adoptar Scrum como metodología de trabajo. La estructura del proyecto se organizará en un equipo pequeño, facilitando la colaboración y maximizando la eficiencia. Ésta metodología se caracteriza por su flexibilidad y capacidad de adaptación, lo que permitirá al equipo ajustar las tareas y metas según sea necesario durante cada sprint.
 
 <img src= "https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/scrum.png" alt="Logo del equipo" height="300">
 
-# Stack tecnológico
+
+## Stack tecnológico
 
 <div class="stack-tech-images">
   <img src="/images/vscode.jpeg" alt="VS Code" width="180" height="80">
@@ -168,12 +178,14 @@ Hemos decidido adoptar Scrum como metodología de trabajo. La estructura del pro
 </div>
 
 
-# Diagrama de Gantt
+
+## Diagrama de Gantt
 
 ![image](https://github.com/ji-berti/DS_Proyecto_Final_Grupal/assets/142271064/3d583eea-516f-4192-a029-58b709aca000)
 
 
-# Análisis preliminar de datos
+
+## Análisis preliminar de datos
 
 1. Objetivo del Análisis Preliminar de Datos:
 Se realizó un análisis preliminar de datos sobre  100 mil  ordenes de compras que se realizaron en Brasil en distintos puntos de venta desde el 2016 hasta el 2018 con el objetivo de identificar y conocer la calidad de los datos e  identificar patrones. 
