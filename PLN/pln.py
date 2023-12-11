@@ -5,17 +5,17 @@ import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+from nltk.probability import FreqDist
 import re
 from unidecode import unidecode
-from nltk.probability import FreqDist
 from wordcloud import WordCloud
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics import classification_report
-from sklearn.metrics import roc_auc_score
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report, roc_curve, auc, roc_auc_score, confusion_matrix
 import xgboost as xgb
 from xgboost import XGBClassifier
+
+
 
 # Descargar recursos adicionales de NLTK 
 # nltk.download('punkt')
@@ -176,7 +176,59 @@ sns.heatmap(conf_matrix, annot=True, fmt="d", cmap="Blues", cbar=False)
 plt.title("Matriz de Confusión")
 plt.xlabel("Predicciones")
 plt.ylabel("Valores Verdaderos")
+#plt.show()
+
+#Informe de clasificación.
+print(classification_report(y_test, model_xgboost.predict(X_test_tfidf)))
+
+#----------------------------------Optimización de hiperparámetros-----------------------------------#
+param_grid = {
+    'learning_rate': [0.01, 0.1, 0.2],
+    'max_depth': [3, 5, 7],
+    'n_estimators': [100, 500, 1000],
+    'subsample': [0.5, 0.7, 1],
+    'colsample_bytree': [0.5, 0.7, 1]
+}
+
+model_xgboost = xgb.XGBClassifier(eval_metric='auc')
+grid_search = GridSearchCV(model_xgboost, param_grid, scoring='roc_auc', cv=3, verbose=1)
+
+# Ejecutar la búsqueda
+grid_search.fit(X_train_tfidf, y_train)
+
+# Mejores hiperparámetros
+print("Mejores hiperparámetros:", grid_search.best_params_)
+
+# Evaluar el modelo optimizado
+best_model = grid_search.best_estimator_
+y_train_pred = best_model.predict_proba(X_train_tfidf)[:,1]
+y_test_pred = best_model.predict_proba(X_test_tfidf)[:,1]
+
+print("AUC Train: {:.4f}\nAUC Test: {:.4f}".format(roc_auc_score(y_train, y_train_pred),
+                                                   roc_auc_score(y_test, y_test_pred)))
+
+# Matriz de confusión y reporte de clasificación
+conf_matrix = confusion_matrix(y_test, best_model.predict(X_test_tfidf))
+print(classification_report(y_test, best_model.predict(X_test_tfidf)))
+
+plt.figure(figsize=(8, 6))
+sns.heatmap(conf_matrix, annot=True, fmt="d", cmap="Blues", cbar=False)
+plt.title("Matriz de Confusión")
+plt.xlabel("Predicciones")
+plt.ylabel("Valores Verdaderos")
 plt.show()
 
-print('Informe de clasificación')
-print(classification_report(y_test, model_xgboost.predict(X_test_tfidf)))
+# Graficar la Curva ROC y calcular el AUC para el modelo optimizado
+fpr, tpr, thresholds = roc_curve(y_test, y_test_pred)
+roc_auc = auc(fpr, tpr)
+
+plt.figure(figsize=(8, 6))
+plt.plot(fpr, tpr, color='darkorange', lw=2, label='Curva ROC (área = %0.2f)' % roc_auc)
+plt.plot([0, 1], [0, 1], color='navy', lw=2, linestyle='--')
+plt.xlim([0.0, 1.0])
+plt.ylim([0.0, 1.05])
+plt.xlabel('Tasa de Falsos Positivos')
+plt.ylabel('Tasa de Verdaderos Positivos')
+plt.title('Característica Operativa del Receptor - XGBoost Optimizado')
+plt.legend(loc="lower right")
+plt.show()
