@@ -17,7 +17,10 @@
 11. [Stack tecnológico](#stack-tecnológico)
 12. [Diagrama de Gantt](#diagrama-de-gantt)
 13. [Análisis Preliminar de Datos](#análisis-preliminar-de-datos)
-14. [Análisis Exploratorio de Datos(EDA)](#análisis-exploratorio-de-datoseda)
+14. [Análisis Exploratorio de Datos (EDA)](#análisis-exploratorio-de-datos-eda)
+15. [Procesamiento de Lenguaje Natural](#procesamiento-de-lenguaje-natural)
+16. [Modelo de Machine Learning](#modelo-de-machine-learning)
+17. [Conclusiones/Plan de Acción](conclusiones-plan-de-acción)
 
 
 
@@ -233,4 +236,16 @@ La calidad de los datos analizados en el informe es en su mayoría alta, ya que 
 </div>
 
  
-## Análisis Exploratorio de Datos(EDA)
+## Análisis Exploratorio de Datos (EDA)
+
+
+
+## Procesamiento de lenguaje natural
+Se realizó el análisis de encuestas de satisfacción de los clientes. 
+Documentación  en [PLN](PLN)  
+
+
+## Modelo de Machine Learning
+
+
+## Conclusiones/Plan de Acción
