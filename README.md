@@ -251,3 +251,5 @@ Se utilizó un modelo  Random Forest con un R2 de 0.906.
 Para ver la documentacion  [ModeloML](modeloML)
 
 ## Conclusiones/Plan de Acción
+
+<img src="https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/Conclusiones.png" alt="Conclusiones" width="800">
