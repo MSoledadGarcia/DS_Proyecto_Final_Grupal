@@ -62,7 +62,7 @@ plt.title('Distribución de frecuencias II')
 plt.xlabel('Tipo de review')
 plt.ylabel('Frecuencia')
 plt.xticks([0, 1], ['Negativa', 'Positiva'])
-#plt.show()
+plt.show()
 
 df_token = pd.read_csv('opiniones_cond.csv')
 # Definir la expresión regular para filtrar solo letras
@@ -70,10 +70,10 @@ regex_letters = re.compile('[^a-zA-Z]')
 
 # Tokenizar y lematizar la columna 'titulo'
 lemmatizer = WordNetLemmatizer()
-stop_words = set(stopwords.words('spanish'))  # Puedes personalizar las stopwords según tu idioma
+stop_words = set(stopwords.words('spanish')) 
 
 def tokenize_and_lemmatize(text):
-    text = unidecode(str(text))  # Quitar acentos
+    text = unidecode(str(text))  
     text = regex_letters.sub(' ', text)
     return [lemmatizer.lemmatize(word.lower()) for word in word_tokenize(text) if word.lower() not in stop_words]
 
@@ -109,7 +109,7 @@ plt.figure(figsize = (15,8))
 plot = sns.barplot(x  = df_titulo_positivo.iloc[:10].Word, y = df_titulo_positivo.iloc[:10].Frequency, palette=colores)
 for item in plot.get_xticklabels():
     item.set_rotation(90)
-#plt.show()
+plt.show()
 
 #Graficar nube de palabras del df_titulo_positivo :
 wordcloud = WordCloud(width=800, height=400, background_color='white').generate_from_frequencies(fd_titulo_positivas)
@@ -117,7 +117,7 @@ wordcloud = WordCloud(width=800, height=400, background_color='white').generate_
 plt.figure(figsize=(10, 5))
 plt.imshow(wordcloud, interpolation='bilinear')
 plt.axis('off')  
-#plt.show()
+plt.show()
 
 #Distribución de palabras en la columna 'mensaje_tokenizado' del DF de opiniones positivas
 fd_mensaje_positivas = FreqDist(token for tokens in df_positivas['mensaje_tokenizado'] for token in tokens)
