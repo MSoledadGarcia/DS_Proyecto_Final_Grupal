@@ -16,7 +16,8 @@
 10. [Metodología de trabajo](#metodología-de-trabajo)
 11. [Stack tecnológico](#stack-tecnológico)
 12. [Diagrama de Gantt](#diagrama-de-gantt)
-13. [Análisis preliminar de datos](#análisis-preliminar-de-datos)
+13. [Análisis Preliminar de Datos](#analisis-preliminar-de-datos)
+14. [Análisis Exploratorio de Datos(EDA)](#analisis-exploratorio-de-datos)
 
 
 
@@ -183,14 +184,14 @@ Hemos decidido adoptar Scrum como metodología de trabajo. La estructura del pro
 </div>
 
 
+<img src="https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/stack.jpg" alt="Logo del equipo" width="600">
 
 ## Diagrama de Gantt
 
 <img src="https://github.com/ji-berti/DS_Proyecto_Final_Grupal/blob/main/images/Diagrama%20de%20gantt.png" alt="Logo del equipo" width="600">
 
 
-
-## Análisis preliminar de datos
+## Análisis Preliminar de Datos
 
 1. Objetivo del Análisis Preliminar de Datos:
 Se realizó un análisis preliminar de datos sobre  100 mil  ordenes de compras que se realizaron en Brasil en distintos puntos de venta desde el 2016 hasta el 2018 con el objetivo de identificar y conocer la calidad de los datos e  identificar patrones. 
@@ -225,6 +226,11 @@ Mas detalles sobre este proceso en [ETL](ETL)
 La calidad de los datos analizados en el informe es en su mayoría alta, ya que la mayoría de la información se presenta de manera legible. Sin embargo, se observaron algunos desafíos relacionados con los nombres propios, donde se detectaron errores tipográficos y variaciones en la escritura. Además, se identificaron inconsistencias en la estructura de los identificadores alfanuméricos, ya que no seguían un formato incremental. Estos aspectos pueden requerir una atención específica para garantizar la coherencia y precisión de los datos, pero en general, la calidad es sólida con la necesidad de abordar ciertas áreas específicas.
 
 5. Primeras observaciones:
-  <img src="/images/Analisis%20preliminar%20productos.png" alt="Productos" width="auto" height="auto">
-  <img src="/images/Analisis%20preliminar%20vendedores.png" alt="Vendedores" width="auto" height="auto">
-  <img src="/images/Analisis%20preliminar%20medios%20de%20pago.png" alt="medios pago" width="auto" height="auto">
+
+<div class="analisis-pre-images">
+ <img src="/images/Analisis%20preliminar%20productos.png" alt="Productos" width="400">
+  <img src="/images/Analisis%20preliminar%20vendedores.png" alt="Vendedores" width="400"">
+</div>
+
+ 
+## Análisis Exploratorio de Datos(EDA)
