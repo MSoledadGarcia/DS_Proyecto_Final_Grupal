@@ -16,8 +16,8 @@
 10. [Metodología de trabajo](#metodología-de-trabajo)
 11. [Stack tecnológico](#stack-tecnológico)
 12. [Diagrama de Gantt](#diagrama-de-gantt)
-13. [Análisis Preliminar de Datos](#analisis-preliminar-de-datos)
-14. [Análisis Exploratorio de Datos(EDA)](#analisis-exploratorio-de-datos)
+13. [Análisis Preliminar de Datos](#análisis-preliminar-de-datos)
+14. [Análisis Exploratorio de Datos(EDA)](#análisis-exploratorio-de-datoseda)
 
 
 
