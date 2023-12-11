@@ -241,8 +241,8 @@ La calidad de los datos analizados en el informe es en su mayoría alta, ya que 
 
 
 ## Procesamiento de lenguaje natural
-Se realizó el análisis de encuestas de satisfacción de los clientes. 
-Documentación  en [PLN](PLN)  
+Se realizó el análisis de las opiniones volcadas por los usuarios. En primer lugar se cuantificó la muestra, separando las reseñas positivas de las negativas y volcando los resultados en un dataframe. El foco estuvo puesto en aquellas acompañadas por un texto, por lo que se prescindió de las que sólo se limitaban a puntuar la entrega. El proceso siguiente consistió en tokenizar y lematizar las columnas que contenían texto, aplicando expresiones regulares y stopwords para limpiar los vectores y ulteriormente calcular las frecuencias de las palabras. Se generó un histograma y una nube de palabras con las más empleadas, a fin de vislumbrar alguna tendencia. Finalmente, se entrenó un modelo de clasificación basado en XGBoost, que arrojó un coeficiente de la Curva Característica Operativa del Receptor (ROC) de 0.94 en primera instancia. Esto significa que es un modelo capaz de predecir con gran exactitud la clase de una nueva muestra. Asimismo, se realizó la optimización de hiperparámetros, a fin de perfeccionar aún más el rendimiento del modelo. Los resultados obtenidos fueron ligeramente más bajos pero se fortaleció la capacidad de generalización del modelo.
+Código  en [PLN](PLN)  
 
 
 ## Modelo de Machine Learning
